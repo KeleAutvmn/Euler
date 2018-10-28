@@ -1,0 +1,11 @@
+n = 1
+sum_list = []
+for i in range(0,1000):
+    if i % 3 == 0:
+        sum_list.append(i)
+for j in range(0,1000):
+    if j % 5 == 0:
+        if j not in sum_list:
+            sum_list.append(j)
+sum_list.sort()
+list_addition = sum(sum_list)
